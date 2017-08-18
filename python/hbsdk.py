@@ -65,7 +65,7 @@ class ApiClient(object):
         self._accessKeySecret = appSecret.encode('utf-8') # change to bytes
         self._assetPassword = assetPassword
         self._host = host
-
+    
     def get(self, path, **params):
         '''
         Send a http get request and return json object.
